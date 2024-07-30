@@ -16,17 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-h4-BUm">
-                                <rect key="frame" x="121" y="408" width="150" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鳴き声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yds-8u-lMc">
+                                <rect key="frame" x="154.33333333333334" y="159" width="84.333333333333343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-gK-pgt">
+                                <rect key="frame" x="50" y="583" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="E7k-p5-WCs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🐶"/>
+                                <connections>
+                                    <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsS-lB-nyR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-YM-jmV">
+                                <rect key="frame" x="268" y="583" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="🐸"/>
+                                <connections>
+                                    <action selector="frogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hg-o2-BHG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xn-5Y-yQG">
+                                <rect key="frame" x="175" y="583" width="43" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="😺"/>
+                                <connections>
+                                    <action selector="catButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ML6-re-jEY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ezf-YM-jmV" firstAttribute="leading" secondItem="6xn-5Y-yQG" secondAttribute="trailing" constant="50" id="7Rs-qU-4zb"/>
+                            <constraint firstItem="Kxu-gK-pgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8OF-ag-FIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6xn-5Y-yQG" secondAttribute="bottom" constant="200" id="EXm-KZ-glz"/>
+                            <constraint firstItem="6xn-5Y-yQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="akW-o9-Fof"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ezf-YM-jmV" secondAttribute="bottom" constant="200" id="cKd-4B-hO6"/>
+                            <constraint firstItem="6xn-5Y-yQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUC-CO-kGw"/>
+                            <constraint firstItem="6xn-5Y-yQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fnC-1F-vdV"/>
+                            <constraint firstItem="6xn-5Y-yQG" firstAttribute="leading" secondItem="Kxu-gK-pgt" secondAttribute="trailing" constant="50" id="g1X-aX-zuR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ezf-YM-jmV" secondAttribute="trailing" constant="50" id="gOi-47-6T6"/>
+                            <constraint firstItem="Kxu-gK-pgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="imZ-zV-gxT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kxu-gK-pgt" secondAttribute="bottom" constant="200" id="k12-ym-ig0"/>
+                            <constraint firstItem="Kxu-gK-pgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pV3-Sm-FTl"/>
+                            <constraint firstItem="yds-8u-lMc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rcQ-rL-Tvo"/>
+                            <constraint firstItem="yds-8u-lMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z26-bn-D94"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="yds-8u-lMc" id="gU9-Bd-POT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
