@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  Sampleios
 //
 //  Created by Masaya Furukawa on 2024/08/05.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var label1: UILabel!
+class SecondViewController: UIViewController {
+    @IBOutlet weak var label2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        label1.text = "1つ目の画面"
+        label2.text = "2つ目の画面"
     }
     
 

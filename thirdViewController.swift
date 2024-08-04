@@ -1,24 +1,23 @@
 //
-//  ModalViewController.swift
+//  thirdViewController.swift
 //  Sampleios
 //
-//  Created by Masaya Furukawa on 2024/07/31.
+//  Created by Masaya Furukawa on 2024/08/05.
 //
 
 import UIKit
 
-class ModalViewController: UIViewController {
-
+class thirdViewController: UIViewController {
+    @IBOutlet weak var label3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        label3.text = "3つ目の画面"
     }
     
-    @IBAction func backButtonAction(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 
